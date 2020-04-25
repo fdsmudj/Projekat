@@ -32,7 +32,20 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="character.hpp" />
+		<Unit filename="charm.hpp" />
+		<Unit filename="equipment.hpp" />
+		<Unit filename="gamemode.hpp" />
+		<Unit filename="heal.hpp" />
+		<Unit filename="hopup.hpp" />
+		<Unit filename="legendary.hpp" />
+		<Unit filename="loot.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mapa.hpp" />
+		<Unit filename="stocks.hpp" />
+		<Unit filename="store.hpp" />
+		<Unit filename="value.hpp" />
+		<Unit filename="weapons.hpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

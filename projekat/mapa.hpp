@@ -4,7 +4,7 @@
 class Mapa
 {
 private:
-    char name;
+    string name;
     int rarity;
 };
 

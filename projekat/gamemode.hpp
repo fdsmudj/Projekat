@@ -5,7 +5,7 @@ class Gamemode
 {
 private:
     int numOfPlayers;
-    char mapName;
+    string mapName;
 };
 
 #endif // GAMEMODE_HPP_INCLUDED

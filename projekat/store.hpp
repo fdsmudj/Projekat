@@ -4,7 +4,7 @@
 class Store
 {
     int rarityOfSkin;
-    char nameOfSkin;
+    string nameOfSkin;
     bool active;
     bool hairloom;
     double valueOfSkin;
