@@ -3,7 +3,7 @@
 
 class Mapa
 {
-private:
+protected:
     string name;
     int rarity;
 };

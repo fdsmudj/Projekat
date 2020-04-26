@@ -3,6 +3,7 @@
 enum hopup {doubleTap, turbocharger, selectfire, choke, hammerpoint};
 class Hopup
 {
+protected:
     hopup h;
     bool rarity;
 };

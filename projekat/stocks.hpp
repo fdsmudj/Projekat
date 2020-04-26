@@ -4,7 +4,7 @@ enum type {stock, mag, stabilizer, scope};
 
 class Stocks
 {
-private:
+protected:
     type s;
     int rarity;
     bool hcog;

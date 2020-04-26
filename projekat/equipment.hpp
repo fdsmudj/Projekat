@@ -3,6 +3,7 @@
 enum tyype {bakcpack, shield, helmet, knockdown shield};
 class Equipment
 {
+protected:
     tyype e;
     int rarity;
     int specAbility;

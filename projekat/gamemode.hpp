@@ -3,7 +3,7 @@
 
 class Gamemode
 {
-private:
+protected:
     int numOfPlayers;
     string mapName;
 };

@@ -3,6 +3,7 @@
 enum clas {heavy=1, light=2, energy=3, shells=4};
 class Weapons
 {
+protected:
     clas c;
     int damage;
     bool reload;

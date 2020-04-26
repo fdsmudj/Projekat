@@ -3,7 +3,7 @@
 
 class Character
 {
-private:
+protected:
     string playerName;
     string ability;
     bool cooldown;

@@ -3,6 +3,7 @@
 
 class Store
 {
+protected:
     int rarityOfSkin;
     string nameOfSkin;
     bool active;

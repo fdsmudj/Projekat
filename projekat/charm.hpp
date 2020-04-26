@@ -3,6 +3,7 @@
 
 class Charm
 {
+protected;
     int rarity;
     int position;
     bool activity;

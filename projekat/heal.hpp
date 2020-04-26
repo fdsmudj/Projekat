@@ -3,7 +3,7 @@
 
 class Heal
 {
-private:
+protected:
     bool kind;
     int power;
 };
