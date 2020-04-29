@@ -7,6 +7,7 @@ protected:
     string playerName;
     string ability;
     bool cooldown;
+    int health;
 public:
     Charcater(string name, string ability1, bool cd)
     {
