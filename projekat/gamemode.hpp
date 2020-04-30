@@ -9,8 +9,9 @@ protected:
 public:
     Gamemode(int numOfPlayers1, string name1, int rarity1):mapName(string name1, int rarity1)
     {
-
+    numOfPlayers=numOfPlayers1;
     }
+
 };
 
 #endif // GAMEMODE_HPP_INCLUDED

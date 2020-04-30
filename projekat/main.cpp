@@ -1,6 +1,7 @@
 #include <iostream>
-
 using namespace std;
+#include "character.hpp"
+#include "loot.hpp"
 
 int main()
 {
