@@ -10,7 +10,7 @@ protected:
     Character c;
 public:
 
-    Heal(bool kind1, int power1=10, int number1, stirng pN, stirng ab, bool cd, int health, int armour):c(pN, ab, cd, health, armour)
+    Heal(bool kind1, int power1, int number1, string pN, string ab, bool cd, int health, int armour):c(pN, ab, cd, health, armour)
     {
         kind=kind1;
         power=power1;
@@ -20,13 +20,13 @@ public:
     {
         if(kind==true)
         {
-            if(c.setHealth<100)
+            if(c.getHealth()<100)
             {
                 int x;
-                x=c.setHealth();
+                x=c.getHealth();
                 c.setHealth(x+power);
             }
-            if(c.setHealth>100)
+            if(c.getHealth()>100)
             {
                 c.setHealth(100);
                 cout<<"Maksimalan broj zivota"<<endl;
@@ -34,13 +34,13 @@ public:
         }
         if(kind==false)
         {
-            if(c.setArmour<100)
+            if(c.getArmour()<100)
             {
                 int y;
-                y=c.setArmour();
+                y=c.getArmour();
                 c.setArmour(y+power);
             }
-            if(c.setArmour>100)
+            if(c.getArmour()>100)
             {
                 c.setArmour(100);
                 cout<<"Maksimalan broj oklopa"<<endl;

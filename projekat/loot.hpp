@@ -1,6 +1,6 @@
 #ifndef LOOT_HPP_INCLUDED
 #define LOOT_HPP_INCLUDED
-#include "loot.hpp"
+#include "heal.hpp"
 #include "equipment.hpp"
 #include "stocks.hpp"
 class Loot
