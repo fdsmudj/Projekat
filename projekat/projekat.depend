@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1588441021 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
+1588451970 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
 	<iostream>
+	<fstream>
 	"character.hpp"
 	"charm.hpp"
 	"equipment.hpp"
@@ -17,7 +18,7 @@
 
 1588441389 c:\users\korisnik\documents\github\projekat\projekat\charm.hpp
 
-1588441244 c:\users\korisnik\documents\github\projekat\projekat\equipment.hpp
+1588453775 c:\users\korisnik\documents\github\projekat\projekat\equipment.hpp
 
 1588437797 c:\users\korisnik\documents\github\projekat\projekat\gamemode.hpp
 	"mapa.hpp"
@@ -31,12 +32,12 @@
 
 1588440035 c:\users\korisnik\documents\github\projekat\projekat\weapons.hpp
 
-1588441340 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
+1588450133 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
 	"heal.hpp"
 	"equipment.hpp"
 	"stocks.hpp"
 
-1588440667 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
+1588453766 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
 	"character.hpp"
 
 1588441021 c:\users\korisnik\documents\github\projekat\projekat\stocks.hpp

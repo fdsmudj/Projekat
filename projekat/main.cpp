@@ -14,10 +14,7 @@ using namespace std;
 #include "weapons.hpp"
 int main()
 {
-    Heal h(true, 20, 1, "Bangalore", "Smoke launcher", false, 100, 100);
-    Equipment e(backpack, 2, "Fast heal", 0);
-    h.metodaH();
-    e.metodaE();
+    citaj("Equipment.txt");
 
     //Predlog funkcionalnosti: Moj rad tezi ka tome da kroz svih dvanaest klasa najbolje simulira radnju i desavanje igrice koju sam izabrao, ali bez animacija
 

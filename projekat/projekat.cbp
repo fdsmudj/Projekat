@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Equipment.txt" />
 		<Unit filename="character.hpp" />
 		<Unit filename="charm.hpp" />
 		<Unit filename="equipment.hpp" />
