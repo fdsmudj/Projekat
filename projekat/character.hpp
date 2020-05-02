@@ -10,13 +10,13 @@ protected:
     int health;
     int armour;
 public:
-    Character(string name, string ability1, bool cd, int h, int a)
+    Character(string playerName1, string ability1, bool cooldown1, int health1, int armour1)
     {
-        playerName=name;
+        playerName=playerName1;
         ability=ability1;
-        cooldown=cd;
-        health=h;
-        armour=a;
+        cooldown=cooldown1;
+        health=health1;
+        armour=armour1;
     }
     void setHealth(int health1) {health=health1;}
     void setArmour(int armor) {armour=armor;}

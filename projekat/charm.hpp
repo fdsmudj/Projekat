@@ -3,10 +3,15 @@
 
 class Charm
 {
-protected;
+protected:
     int rarity;
-    int position;
     bool activity;
+public:
+    Charm(int rarity1, bool activity1)
+    {
+        rarity=rarity1;
+        activity=activity1;
+    }
 };
 
 #endif // CHARM_HPP_INCLUDED

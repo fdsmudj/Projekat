@@ -5,9 +5,9 @@ class Gamemode
 {
 protected:
     int numOfPlayers;
-    Mapa mapName;
+    Mapa mapa;
 public:
-    Gamemode(int numOfPlayers1, string name1, int rarity1):mapName(string name1, int rarity1)
+    Gamemode(int numOfPlayers1, string name1, int rarity1):mapa(name1, rarity1)
     {
     numOfPlayers=numOfPlayers1;
     }

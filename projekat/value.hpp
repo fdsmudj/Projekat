@@ -6,6 +6,12 @@ class Value
 protected:
     value v;
     bool threshold;
+public:
+    Value(value v1, bool threshold1)
+    {
+        v=v1;
+        threshold=threshold1;
+    }
 
 };
 
