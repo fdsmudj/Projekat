@@ -34,6 +34,10 @@ public:
         specAbility=specAbility1;
         amount=amount1;
     }
+    void metodaCitajE()
+    {
+        citaj("Equipment.txt");
+    }
     void metodaE()
     {
         if(e==1)

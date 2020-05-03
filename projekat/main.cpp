@@ -14,7 +14,8 @@ using namespace std;
 #include "weapons.hpp"
 int main()
 {
-    citaj("Equipment.txt");
+    Equipment e(backpack, 2, Guardian_angel, 0);
+    e.metodaCitajE();
 
     //Predlog funkcionalnosti: Moj rad tezi ka tome da kroz svih dvanaest klasa najbolje simulira radnju i desavanje igrice koju sam izabrao, ali bez animacija
 
