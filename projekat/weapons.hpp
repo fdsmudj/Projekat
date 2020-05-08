@@ -20,6 +20,7 @@ public:
         reloadTime=reloadTime1;
         headshot=headshot1;
     }
+    friend ostream& operator<<(ostream& izlaz, const Weapons& w);
 };
 
 #endif // WEAPONS_HPP_INCLUDED

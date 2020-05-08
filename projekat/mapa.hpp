@@ -12,6 +12,9 @@ public:
         name=name1;
         rarity=rarity1;
     }
+    friend ostream& operator<<(ostream& izlaz, const Mapa& m);
+
 };
+
 
 #endif // MAPA_HPP_INCLUDED

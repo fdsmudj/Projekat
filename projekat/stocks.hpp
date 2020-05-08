@@ -17,6 +17,9 @@ public:
         hcog=hcog1;
         light=light1;
     }
+    friend ostream& operator<<(ostream& izlaz, const Stocks& s);
+
+
 };
 
 #endif // STOCKS_HPP_INCLUDED

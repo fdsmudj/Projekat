@@ -26,23 +26,23 @@ public:
     {
         if(playerName==1)
         {
-            ability='Rolling Thunder';
+            ability="Rolling Thunder";
         }
         if(playerName==2)
         {
-            ability='Launch Pad';
+            ability="Launch Pad";
         }
         if(playerName==3)
         {
-            ability='Zipline';
+            ability="Zipline";
         }
         if(playerName==4)
         {
-            ability='Care Package';
+            ability="Care Package";
         }
         if(playerName==5)
         {
-            ability='Death Totem';
+            ability="Death Totem";
         }
     }
 
