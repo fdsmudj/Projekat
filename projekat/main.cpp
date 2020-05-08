@@ -40,18 +40,23 @@ ostream& operator<<(ostream& izlaz, const Weapons& w){
     izlaz<<"METAK: "<<w.c<<endl;
     izlaz<<"RETKOST: "<<w.reload<<endl;
     izlaz<<"BROJ METAKA: "<<w.numOfBullets<<endl;
-    izlaz<<"VREME MENJANJA ŠARŽERA: "<<w.reloadTime<<endl;
-    izlaz<<"POGODAK U GLAVU: "<<w.headshot<<endl;
+    izlaz<<"VREME MENJANJA SARZERA: "<<w.reloadTime<<endl;
 
 return izlaz;
 }
 
 int main()
 {
+    Stocks st(stock, 2, false, true);
+    cout<<st<<endl;
+    Mapa m("Kings canyon", 2);
+    cout<<m<<endl;
+    Weapons w(heavy, 20, true, 10, 2.5);
+    cout<<w<<endl;
     Store s(3, "Skin", true, 10);
     Value v(100, true);
     s.Kupovina(v);
-    cout<<Store::investment<<endl;
+    cout<<"Igrac je trenutno investirao "<<Store::investment<<" u Apex Legends! "<<endl;
 
     //Predlog funkcionalnosti: Moj rad tezi ka tome da kroz svih dvanaest klasa najbolje simulira radnju i desavanje igrice koju sam izabrao, ali bez animacija
 
