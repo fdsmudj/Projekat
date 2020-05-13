@@ -1,6 +1,6 @@
 #ifndef CHARACTER_HPP_INCLUDED
 #define CHARACTER_HPP_INCLUDED
-enum plN{Bangalore=1, Octane, Pathfinder, Revenant, Lifeline};
+enum plN {Bangalore=1, Octane, Pathfinder, Revenant, Lifeline};
 class Character
 {
 protected:
@@ -18,10 +18,22 @@ public:
         health=health1;
         armour=armour1;
     }
-    void setHealth(int health1) {health=health1;}
-    void setArmour(int armor) {armour=armor;}
-    int getHealth(){return health;}
-    int getArmour(){return armour;}
+    void setHealth(int health1)
+    {
+        health=health1;
+    }
+    void setArmour(int armor)
+    {
+        armour=armor;
+    }
+    int getHealth()
+    {
+        return health;
+    }
+    int getArmour()
+    {
+        return armour;
+    }
     void metodaCh1()
     {
         if(playerName==1)

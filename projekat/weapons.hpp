@@ -18,7 +18,11 @@ public:
         numOfBullets=numOfBullets1;
         reloadTime=reloadTime1;
     }
-    friend ostream& operator<<(ostream& izlaz, const Weapons& w);
+    virtual void ispisPolja()
+    {
+        cout<<"Ispis polja"<<endl<<endl;
+        cout<<c<<", "<<damage<<", "<<reload<<", "<<numOfBullets<<", "<<reloadTime;
+    }
 };
 
 #endif // WEAPONS_HPP_INCLUDED

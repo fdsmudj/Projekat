@@ -81,6 +81,7 @@ public:
             }
         }
     }
+    friend ostream& operator<<(ostream& izlaz, const Equipment& e);
 
 };
 
