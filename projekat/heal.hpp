@@ -10,8 +10,8 @@ protected:
     Character c;
 public:
 
-    Heal(bool kind1, int power1, int number1, plN playerName1, string ability1, bool cooldown1, int health1, int armour1)
-    :c(playerName1, ability1, cooldown1, health1, armour1)
+    Heal(bool kind1, int power1, int number1, plN playerName1, string ability1, bool cooldown1, int health1, int armour1, bool active1)
+    :c(playerName1, ability1, cooldown1, health1, armour1, active1)
     {
         kind=kind1;
         power=power1;

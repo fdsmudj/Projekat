@@ -13,7 +13,11 @@ public:
         rarity=rarity1;
     }
     friend ostream& operator<<(ostream& izlaz, const Mapa& m);
-
+    virtual void ispisMape()
+    {
+        cout<<name;
+    }
+    int getRarity(){return rarity;}
 };
 
 

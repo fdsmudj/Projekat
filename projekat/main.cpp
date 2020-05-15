@@ -13,6 +13,7 @@ using namespace std;
 #include "value.hpp"
 #include "weapons.hpp"
 #include "store.hpp"
+#include <vector>
 
 
     ostream& operator<<(ostream& izlaz, const Stocks& s){
@@ -46,18 +47,41 @@ return izlaz;
 int main()
 {
     Stocks st(stock, 2, false, true);
-    cout<<st<<endl;
-    Mapa m("Kings canyon", 2);
-    cout<<m<<endl;
+    Mapa m1("Kings canyon", 2);
+    Mapa m2("Worlds end", 3);
+    Mapa m3("Hot nigga by Bobby shmurda", 1);
     Equipment e(helmet, 3, Guardian_angel, 10);
-    cout<<e<<endl;
     Store s(3, "Skin", true, 10);
     Value v(100, true);
     Weapons w(heavy, 10, true, 20, 4.50);
     Legendary l(kraber, kraber, heavy, 15, true, 50, 10);
+    Gamemode g(60, "Kings canyon", 3);
+    Character ct1(Bangalore, "Landing zone", true, 100, 0, true);
+    cout<<st<<endl;
+    cout<<m1<<endl;
+    cout<<e<<endl;
     w.ispisPolja();
     cout<<endl<<endl;
     l.ispisPolja();
+    cout<<endl<<endl;
+    g.ispisMape();
+    cout<<endl<<endl;
+    g.dodajMapu(m1);
+    g.dodajMapu(m2);
+    g.dodajMapu(m3);
+    g.ispisMapa();
+    cout<<endl<<endl;
+    cout<<g.brojMapa();
+    cout<<endl<<endl;
+    g.brisanje();
+    cout<<endl<<endl;
+    cout<<g.brojMapa();
+    cout<<endl<<endl;
+    g.ispisMapa();
+    cout<<endl<<endl;
+    g.pretraga();
+    cout<<endl<<endl;
+    g.pretragaPoRetkosti(m1);
 
 
     //Predlog funkcionalnosti: Moj rad tezi ka tome da kroz svih dvanaest klasa najbolje simulira radnju i desavanje igrice koju sam izabrao, ali bez animacija
