@@ -39,8 +39,11 @@ public:
     }
     void brisanje()
     {
-        cout<<"Brise se poslednja mapa";
-        mape.erase (mape.begin()+2);
+        int x;
+        cout<<"Unesite broj pozicije objekta koji zelite obrisati: ";
+        cin>>x;
+        cout<<" Brise se mapa"<<endl;;
+        mape.erase (mape.begin()+x);
     }
     void pretraga()
     {
