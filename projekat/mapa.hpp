@@ -15,7 +15,7 @@ public:
     friend ostream& operator<<(ostream& izlaz, const Mapa& m);
     virtual void ispisMape()
     {
-        cout<<name;
+        cout<<"Ime mape je "<<name;
     }
     int getRarity(){return rarity;}
 };

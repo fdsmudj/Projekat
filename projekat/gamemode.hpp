@@ -69,6 +69,8 @@ public:
         else
             cout<<"Ne postoji retkost "<<x<<" ."<<endl;
     }
+    int getBrojIgraca(){return numOfPlayers;}
+    string getName(){return name;}
 };
 
 #endif // GAMEMODE_HPP_INCLUDED

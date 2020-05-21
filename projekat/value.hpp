@@ -14,7 +14,12 @@ public:
     double getAmount(){return amount;}
     bool getThreshold(){return threshold;}
     void setAmount(double a){amount=a;}
-
+    bool Provera(int b)
+    {
+        if(amount>=b)
+            return true;
+            return false;
+    }
 
 };
 

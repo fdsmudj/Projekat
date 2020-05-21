@@ -18,7 +18,9 @@ public:
         light=light1;
     }
     friend ostream& operator<<(ostream& izlaz, const Stocks& s);
-
+    int getRarity(){return rarity;}
+    bool returnHcog(){return hcog;}
+    bool returnLight(){return light;}
 
 };
 

@@ -7,9 +7,9 @@ protected:
     int rarityOfSkin;
     string nameOfSkin;
     bool active;
-    double valueOfSkin;
+    int valueOfSkin;
 public:
-    Store(int rarityOfSkin1, string nameOfSkin1, bool active1, double valueOfSkin1)
+    Store(int rarityOfSkin1, string nameOfSkin1, bool active1, int valueOfSkin1)
     {
         rarityOfSkin=rarityOfSkin1;
         nameOfSkin=nameOfSkin1;

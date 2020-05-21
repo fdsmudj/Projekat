@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1589480297 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
+1590100969 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
 	<iostream>
 	<fstream>
+	<stdlib.h>
 	"character.hpp"
 	"charm.hpp"
 	"equipment.hpp"
@@ -16,18 +17,18 @@
 	"store.hpp"
 	<vector>
 
-1589473007 c:\users\korisnik\documents\github\projekat\projekat\character.hpp
+1590096778 c:\users\korisnik\documents\github\projekat\projekat\character.hpp
 
 1588441389 c:\users\korisnik\documents\github\projekat\projekat\charm.hpp
 
 1589309385 c:\users\korisnik\documents\github\projekat\projekat\equipment.hpp
 
-1589641146 c:\users\korisnik\documents\github\projekat\projekat\gamemode.hpp
+1590095887 c:\users\korisnik\documents\github\projekat\projekat\gamemode.hpp
 	"mapa.hpp"
 	<vector>
 	"character.hpp"
 
-1589475775 c:\users\korisnik\documents\github\projekat\projekat\mapa.hpp
+1589960322 c:\users\korisnik\documents\github\projekat\projekat\mapa.hpp
 
 1588441432 c:\users\korisnik\documents\github\projekat\projekat\hopup.hpp
 
@@ -36,17 +37,17 @@
 
 1589457064 c:\users\korisnik\documents\github\projekat\projekat\weapons.hpp
 
-1589473091 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
+1590096792 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
 	"heal.hpp"
 	"equipment.hpp"
 	"stocks.hpp"
 
-1589473063 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
+1590096784 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
 	"character.hpp"
 
-1588886029 c:\users\korisnik\documents\github\projekat\projekat\stocks.hpp
+1590100649 c:\users\korisnik\documents\github\projekat\projekat\stocks.hpp
 
-1588936187 c:\users\korisnik\documents\github\projekat\projekat\value.hpp
+1590099354 c:\users\korisnik\documents\github\projekat\projekat\value.hpp
 
-1589387682 c:\users\korisnik\documents\github\projekat\projekat\store.hpp
+1590092922 c:\users\korisnik\documents\github\projekat\projekat\store.hpp
 

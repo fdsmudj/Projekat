@@ -1,0 +1,3 @@
+3,The Dark Artist,true,500
+3,The Runekeeper,false,500
+2,Fiber Optics,true,300

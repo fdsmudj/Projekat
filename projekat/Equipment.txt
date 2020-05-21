@@ -1,4 +1,0 @@
-backpack, 2, Guardian_angel, 0
-helmet, 3, Fast_charge, 0
-shield, 4, Fast_heal, 0
-knockdownshield, 1, Self_revive, 0
