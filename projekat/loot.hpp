@@ -10,8 +10,8 @@ protected:
     Equipment E;
     Stocks S;
 public:
-    Loot(bool kind1, int power1, int number1, string playerName1, string ability1, bool cooldown1, int health1, int armour1, bool active1, tyype e1, int rarity1, typee specAbility1, int amount1, type s1, int rarity2, bool hcog1, bool light1)
-    :H(kind1, power1, number1, playerName1, ability1, cooldown1, health1, armour1, active1),E(e1, rarity1, specAbility1, amount1),S( s1,rarity2, hcog1, light1)
+    Loot(bool kind1, int power1, int number1, string playerName1, string ability1, bool cooldown1, int health1, int armour1, bool active1, tyype e1, int rarity1, typee specAbility1, int amount1, type s1, int rarity2, bool hcog1, bool light1, bool active2)
+    :H(kind1, power1, number1, playerName1, ability1, cooldown1, health1, armour1, active1),E(e1, rarity1, specAbility1, amount1),S( s1,rarity2, hcog1, light1, active2)
     {
 
     }

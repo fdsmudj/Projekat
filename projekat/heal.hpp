@@ -17,7 +17,7 @@ public:
         power=power1;
         number=number1;
     }
-    void metodaH()
+    void metodaH(Character &c)
     {
         if(kind==true)
         {

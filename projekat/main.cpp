@@ -46,8 +46,13 @@ return izlaz;
 return izlaz;
     }
     ostream& operator<<(ostream& izlaz, const Character& c){
+    izlaz<<c.playerName<<", "<<endl;
+    izlaz<<c.ability<<", "<<endl;
+    izlaz<<c.cooldown<<", "<<endl;
+    izlaz<<c.health<<", "<<endl;
+    izlaz<<c.armour<<", "<<endl;
+    izlaz<<c.active<<endl<<endl;
 
-    izlaz<<c.playerName<<" sa moci "<<c.ability<<endl;
 
 return izlaz;
     }
@@ -106,6 +111,26 @@ void funkcijaZaSkinove(vector <string> Radnja)
         cout<<Radnja[i]<<" koji kosta "<<Radnja[i+2]<<" Apex novcica "<<endl;
     }
 }
+void dodavanje(string nazivFajla, string tekst, char mode='w')
+{
+    ofstream fajl;
+    if (mode=='a')
+        fajl.open (nazivFajla, ios_base::app);
+    else
+        fajl.open (nazivFajla);
+    fajl << tekst << endl;
+    fajl.close();
+}
+void dodavanjeStocka(string nazivFajla, Stocks &s, char mode='a')
+{
+    ofstream fajl;
+    if (mode=='a')
+        fajl.open (nazivFajla, ios_base::app);
+    else
+        fajl.open (nazivFajla);
+    fajl <<s<< endl;
+    fajl.close();
+}
 int main()
 {
    /* Mapa* pom;
@@ -124,12 +149,26 @@ int main()
     Character c3("Pathfinder", "Zipline", false, 100, 0, false);
     Character c4("Octane", "Jumpad", false, 100, 0, false);
     Character c5("Lifeline", "Care Package", false, 100, 0, false);
-    Heal h1(true, 20, 1, "Bangalore", "Rolling Thunder", true, 60, 0, true);
-    Heal h2(true, 30, 1, "Bangalore", "Rolling Thunder", true, 60, 0, true);
-    Heal h3(true, 10, 1, "Bangalore", "Rolling Thunder", true, 60, 0, true);
-    Stocks s1(stock, 3, true, true);
-    Stocks s2(mag, 1, false, true);
-    Stocks s3(stabilizer, 2, true, false);
+    Heal h1(true, 20, 1, "Bangalore", "Rolling Thunder", true, 100, 0, true);
+    Heal h2(true, 30, 1, "Bangalore", "Rolling Thunder", true, 100, 0, true);
+    Heal h3(true, 10, 1, "Bangalore", "Rolling Thunder", true, 100, 0, true);
+    Stocks s1(stock, 3, true, false, false);
+    Stocks s2(mag, 1, false, false, false);
+    Stocks s3(stabilizer, 2, true, false, false);
+    vector <Character> niz;
+    vector <Heal> niz2;
+    vector <Stocks> niz3;
+    niz.push_back(c1);
+    niz.push_back(c2);
+    niz.push_back(c3);
+    niz.push_back(c4);
+    niz.push_back(c5);
+    niz2.push_back(h1);
+    niz2.push_back(h2);
+    niz2.push_back(h3);
+    niz3.push_back(s1);
+    niz3.push_back(s2);
+    niz3.push_back(s3);
     cout<<"Dobro dosli u Apex Legends!\n";
 
 do
@@ -143,12 +182,13 @@ do
     if(x==0){
     funkcijaZaSkinove(Radnja);
     cout<<endl<<endl;
+        do
+    {
+        cout<<"Para imate "<<v.getAmount()<<endl;
         cout<<"Ako zelite prvi skin, pritisnite taster 1"<<endl;
         cout<<"Ako zelite drugi skin, pritisnite taster 2"<<endl;
         cout<<"Ako zelite treci skin, pritisnite taster 3"<<endl;
         cout<<"Ako ne zelite nista kupiti, pritisnite taster 0"<<endl;
-        do
-    {
         cin>>y;
         switch(y)
         {
@@ -160,6 +200,7 @@ do
             cout<<"Imate dovoljno Apex novcica da kupite ovaj skin!"<<endl;
             v.setAmount(v.getAmount()-stoi(Radnja[3]));
             brojac1++;
+            cout<<"Skin kupljen!"<<endl<<endl<<endl;
         }
         else
             cout<<"Nazalost nemate dovoljno novca za skin"<<endl;
@@ -175,6 +216,7 @@ do
             cout<<"Imate dovoljno Apex novcica da kupite ovaj skin!"<<endl;
             v.setAmount(v.getAmount()-stoi(Radnja[7]));
             brojac2++;
+            cout<<"Skin kupljen!"<<endl;
         }
         else
             cout<<"Nazalost nemate dovoljno novca za skin"<<endl;
@@ -190,6 +232,7 @@ do
             cout<<"Imate dovoljno Apex novcica da kupite ovaj skin!"<<endl;
             v.setAmount(v.getAmount()-stoi(Radnja[11]));
             brojac3++;
+            cout<<"Skin kupljen!"<<endl;
         }
         else
             cout<<"Nazalost nemate dovoljno novca za skin"<<endl;
@@ -218,7 +261,7 @@ do
             cout<<"..................\n.                 .\n.                 .\n.                 .\n.   Ucitava se    .\n.                 .\n.                 .\n.                 .\n..................\n"<<endl;
             cout<<"Izaberite kojeg lika zelite igrati ovaj mec: "<<endl;
             cin>>xx;
-                switch(xx)
+                /*switch(xx)
                 {
                 case 1:
                     cout<<"Izabrali ste lika "<<c1<<endl;
@@ -235,19 +278,13 @@ do
                 case 5:
                     cout<<"Izabrali ste lika "<<c5<<endl;
                     break;
-                }
+                }*/
+            cout<<"Izabrali ste "<<niz.at(xx-1);
             cout<<"Trenutno je zivo "<<g1.getBrojIgraca()<<" igraca"<<endl;
             cout<<"Trcite napred\nNE SKACITE ODATLE\nSami ste sebi skinuli pola zivota tim ubitacnim skokom!\nUsli ste u zgradu\nSta cete pokupiti?????\n"<<endl;
-            if(xx==1)
-            c1.setHealth(60);
-            if(xx==2)
-            c2.setHealth(60);
-            if(xx==3)
-            c3.setHealth(60);
-            if(xx==4)
-            c4.setHealth(60);
-            if(xx==5)
-            c5.setHealth(60);
+            niz.at(xx-1).setHealth(60);
+            dodavanje("Rezultat funkcionalnosti.txt", "Promenilo se nesto:\n\n");
+            dodavanjeStocka("Rezultat funkcionalnosti.txt", niz3.at(xx-1));
             cout<<"Ispred vas se nalazi vise stvari za izlecivanje vasih rana od skoka\n";
             cout<<"zavoj, prva pomoc, energetsko pice"<<endl;
             cout<<"Taster 1 za zavoje, 2 za prvu pomoc i 3 za energetsko pice (0 ako ne zelite nista, mada vam treba)"<<endl;
@@ -260,32 +297,61 @@ do
             }while(yy!=0 && yy!=1 && yy!=2 && yy!=3);
             if(yy==0)
                 cout<<"Niste uzeli nista za izlecivanje!"<<endl;
-                switch(yy)
+                /*switch(yy)
                 {
             case 1:
                 cout<<"Uzeli ste zavoje!\nZavijate se!\n";
-                h1.metodaH();
+                h1.metodaH(niz.at(xx-1));
                 cout<<"Vas broj zivota je trenutno "<<c1.getHealth()<<endl;;
                 break;
             case 2:
                 cout<<"Imate prvu pomoc!\nHajde da se izlecimo!"<<endl;
-                h2.metodaH();
+                h2.metodaH(niz.at(xx-1));
                 cout<<"Vas broj zivota je trenutno "<<c2.getHealth();
                 break;
             case 3:
                 cout<<"Uzeli ste energetsko pice. Naiskap!"<<endl;
-                h3.metodaH();
+                h3.metodaH(niz.at(xx-1));
                 cout<<"Vas broj zivota je trenutno "<<c3.getHealth()<<endl;
                 break;
                 }
+                */
+                niz2.at(yy-1).metodaH(niz.at(xx-1));
+                cout<<"\n\nInternet vam je pukao, pa ste izbaceni nazad u lobby\n"<<endl;
 
         }
         if(z==1)
         {
+            int zz;
             cout<<"Usli ste u ranked mec\nOvde su samo ozbiljni igraci\nNeki ljudi od ovoga i zive"<<endl;
             cout<<"Slobodno hodajte malo napred"<<endl;
             cout<<"Nasli ste stvari koje ce vam biti potrebne za pusku!\n";     //Napravicu i puske sa onih 20 metoda, opusteno profesorka
-
+            cout<<"Ispred vas su tri stvari!\nImate mesta u rancu samo za jednu stvar!\n"<<endl;
+            cout<<"Na podu je magazin, produzetak puske i optik"<<endl;        //Napravicu ovde vise svega da ima samo sam ovako manje uradio zbog roka
+            cout<<"Taster 1 za magazin, 2 za produzetak puske i 3 za otpik! (ako ne zelite nista, taster 0"<<endl;
+            do
+            {
+                cout<<"Unesite sta cete pokupiti"<<endl;
+                cin>>zz;
+                if(zz!=0 && zz!=1 && zz!=2 && zz!=3)
+                    cout<<"Unesite broj koji je ponudjen!"<<endl;
+            }while(zz!=0 && zz!=1 && zz!=2 && zz!=3);
+            switch(zz)
+            {
+            case 1:
+                cout<<"Uzeli ste magazin!"<<endl;
+                niz3.at(zz-1).setActive(true);
+                break;
+            case 2:
+                cout<<"Uzeli ste produzetak za pusku!"<<endl;
+                niz3.at(zz-1).setActive(true);
+                break;
+            case 3:
+                cout<<"Uzeli ste optik!"<<endl;
+                niz3.at(zz-1).setActive(true);
+                break;
+            }
+            cout<<"Kraj igre za sada" <<endl;
         }
     }
     cout<<"Ako pritisnete sada taster 8, izlazite iz igrice, ako ne zelite pritisnite bilo koji taster"<<endl;

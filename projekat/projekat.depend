@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590100969 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
+1590143880 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -37,15 +37,15 @@
 
 1589457064 c:\users\korisnik\documents\github\projekat\projekat\weapons.hpp
 
-1590096792 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
+1590141028 c:\users\korisnik\documents\github\projekat\projekat\loot.hpp
 	"heal.hpp"
 	"equipment.hpp"
 	"stocks.hpp"
 
-1590096784 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
+1590125242 c:\users\korisnik\documents\github\projekat\projekat\heal.hpp
 	"character.hpp"
 
-1590100649 c:\users\korisnik\documents\github\projekat\projekat\stocks.hpp
+1590141743 c:\users\korisnik\documents\github\projekat\projekat\stocks.hpp
 
 1590099354 c:\users\korisnik\documents\github\projekat\projekat\value.hpp
 
