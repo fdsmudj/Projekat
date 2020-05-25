@@ -16,7 +16,7 @@ public:
         active=active1;
         valueOfSkin=valueOfSkin1;
     }
-
+friend ostream& operator<<(ostream& izlaz, const Store& s);
 };
 
 #endif // STORE_HPP_INCLUDED

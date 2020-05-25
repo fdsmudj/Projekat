@@ -1,8 +1,8 @@
-Promenilo se nesto: 
-Stocks - ispis
-TIP: 0
-RETKOST: 3
-OKULAR: 1
-METAK: 0
+IME: Pathfinder
+MOC: Zipline
+COOLDOWN: 0
+BROJ ZIVOTA: 60
+BROJ OKLOPA: 0
+AKTIVNOST: 0
 
 

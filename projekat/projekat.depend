@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590143880 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
+1590408440 source:c:\users\korisnik\documents\github\projekat\projekat\main.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -16,6 +16,7 @@
 	"weapons.hpp"
 	"store.hpp"
 	<vector>
+	<windows.h>
 
 1590096778 c:\users\korisnik\documents\github\projekat\projekat\character.hpp
 
@@ -49,5 +50,5 @@
 
 1590099354 c:\users\korisnik\documents\github\projekat\projekat\value.hpp
 
-1590092922 c:\users\korisnik\documents\github\projekat\projekat\store.hpp
+1590403609 c:\users\korisnik\documents\github\projekat\projekat\store.hpp
 
